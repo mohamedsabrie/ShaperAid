@@ -58,12 +58,17 @@ body {
   .desc{
     @apply text-[13px] sm:text-base  font-light
   }
+
+  .btn{
+@apply text-center text-[13px] sm:text-base px-5 py-2 border border-white rounded-md w-fit transition duration-200
+  }
   .secBtn{
-    @apply text-center text-[13px] sm:text-base px-5 py-2 border border-white text-white rounded-md w-fit hover:bg-gray-800 transition duration-200
+    @apply btn  text-white  hover:bg-gray-800 
   }
   .primBtn{
-    @apply secBtn bg-white text-black 
+    @apply btn bg-white text-black 
   }
+  
 
 }
 

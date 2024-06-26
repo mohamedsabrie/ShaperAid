@@ -1,10 +1,11 @@
 import { useAnimate, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function useModal() {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
-
+  const { push } = useRouter();
   useEffect(() => {
     if (isInView) {
       animate(scope.current, { opacity: 1 }, { duration: 1 });
@@ -12,31 +13,17 @@ export default function useModal() {
   }, [isInView]);
 
   useEffect(() => {
-    document.querySelector(".home-bg")?.classList.add("blur-sm");
+    const backgroundElement = document.getElementById("homeBg");
+    const handleCloseModal = async (e: any) => {
+      await animate(scope.current, { opacity: 0 }, { duration: 1 });
+      push("/");
+    };
+    document.getElementById("homeBg")?.classList.add("blur-sm");
+    backgroundElement?.addEventListener("click", handleCloseModal);
     return () => {
-      document.querySelector(".home-bg")?.classList.remove("blur-sm");
+      document.getElementById("homeBg")?.classList.remove("blur-sm");
+      backgroundElement?.removeEventListener("click", handleCloseModal)
     };
-  }, []);
-
-  useEffect(() => {
-    const modal = scope.current;
-    const handleCloseModal = (e: any) => {
-      const dialogDimensions = modal?.getBoundingClientRect();
-      console.log(dialogDimensions, "dialogDimensions");
-      if (
-        dialogDimensions &&
-        (e.clientX < dialogDimensions.left ||
-          e.clientX > dialogDimensions.right ||
-          e.clientY < dialogDimensions.top ||
-          e.clientY > dialogDimensions?.bottom)
-      ) {
-        modal && modal.close();
-      }
-    };
-    modal?.addEventListener("click", handleCloseModal);
-    // return () => {
-    //   modal?.removeEventListener("click", handleCloseModal);
-    // };
   }, []);
 
   return { scope, animate };
