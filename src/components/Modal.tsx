@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 function Modal({ children }: { children: ReactNode }) {
-  const { back } = useRouter();
+  const { push } = useRouter();
   const { scope, animate } = useModal();
   
   
@@ -23,7 +23,7 @@ function Modal({ children }: { children: ReactNode }) {
         <XMarkIcon
           onClick={async() => {
             await animate(scope.current, { opacity: 0}, {duration: 1});
-            back()
+            push("/")
           } }
           className="absolute top-3 right-3 text-white h-6 sm:h-10 m-2 cursor-pointer"
         />

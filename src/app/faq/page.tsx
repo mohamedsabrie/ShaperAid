@@ -13,11 +13,11 @@ function FAQPage() {
               <h3 className="text-[11px] sm:text-[13px] font-semibold tracking-widest">
                 {ques}
               </h3>
-              <p className="text-[13px] sm:text-base font-light">{ans}</p>
+              <p className="desc">{ans}</p>
             </div>
           );
         })}
-        <Link scroll={false} href="/help"  className="px-5 py-2 border border-white text-white rounded-md w-fit hover:bg-gray-800 transition duration-200">HELP</Link>
+        <Link scroll={false} href="/help"  className="secBtn">HELP</Link>
       </div>
     </Modal>
   );

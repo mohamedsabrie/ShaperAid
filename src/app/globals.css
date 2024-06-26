@@ -52,6 +52,18 @@ body {
   .modal-title{
     @apply border-b border-white font-semibold  sm:text-2xl w-fit pb-1 pr-2 tracking-[0.2em] uppercase mb-8
   }
+  .section-title{
+    @apply   font-semibold text-[13px]  sm:text-base  tracking-[0.2em] uppercase mb-4
+  }
+  .desc{
+    @apply text-[13px] sm:text-base  font-light
+  }
+  .secBtn{
+    @apply text-center text-[13px] sm:text-base px-5 py-2 border border-white text-white rounded-md w-fit hover:bg-gray-800 transition duration-200
+  }
+  .primBtn{
+    @apply secBtn bg-white text-black 
+  }
 
 }
 
