@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function ContentBottom() {
@@ -8,9 +9,9 @@ function ContentBottom() {
       <div className="flex flex-col sm:flex-row text-[11px] sm:text-[13px]">
         {links.map((link, idx, arr) => {
           return (
-            <div key={link} className={`border ${idx == 3 ? "sm:-mr-1" : ""} ${idx == arr.length - 1 ? "" : "sm:border-r-0"} text-center cursor-pointer  border-white px-5 py-2 hover:backdrop-brightness-[1.2] transition-all duration-200 `}>
+            <Link  href={`/${link}`} key={link} className={`border  ${idx == arr.length - 1 ? "" : "sm:border-r-0"} text-center cursor-pointer  border-white px-5 py-2 hover:backdrop-brightness-[1.2] transition-all duration-200 `}>
               {link.toUpperCase()}
-            </div>
+            </Link>
           );
         })}
       </div>
