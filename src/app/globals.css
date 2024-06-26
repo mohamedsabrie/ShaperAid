@@ -25,11 +25,32 @@ body {
   dialog::backdrop{
     @apply bg-black bg-opacity-15
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 1px solid #455c6d;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+  }
+  .box::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components{
   .modal-title{
-    @apply border-b border-white font-semibold text-2xl w-fit pb-1 pr-2 tracking-[0.2em] uppercase
+    @apply border-b border-white font-semibold  sm:text-2xl w-fit pb-1 pr-2 tracking-[0.2em] uppercase mb-8
   }
 
 }
