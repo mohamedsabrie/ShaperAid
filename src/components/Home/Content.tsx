@@ -7,7 +7,7 @@ function Content() {
   return (
     <motion.div
       transition={{
-        delay: 1,
+        delay: 0.5,
         ease: "easeInOut",
         duration: 1,
       }}

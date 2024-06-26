@@ -40,7 +40,7 @@ body {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #ddd;
+    background: gray;
     border-radius: 10px;
   }
   .box::-webkit-scrollbar {

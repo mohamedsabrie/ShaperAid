@@ -9,12 +9,12 @@ function HomeBackground() {
       transition={{
         ease: "easeOut",
         duration: 1,
-        delay: 2,
+        delay: 1.5,
       }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       id="homeBg"
-      className="absolute right-0 left-0 h-full w-full  bg-home-bg bg-cover "
+      className="absolute right-0 left-0 h-full w-full  bg-home-bg bg-cover  bg-fixed "
     >
       <div className="absolute right-0 left-0 h-full w-full bg-black bg-opacity-40" />
     </motion.div>
