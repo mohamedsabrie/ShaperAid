@@ -17,7 +17,7 @@ function FAQPage() {
             </div>
           );
         })}
-        <Link scroll={false} href="/help"  className="secBtn">HELP</Link>
+        <Link  href="/help"  className="secBtn">HELP</Link>
       </div>
     </Modal>
   );

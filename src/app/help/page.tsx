@@ -62,7 +62,6 @@ function HelpPage() {
       </div>
       <div className="mt-10 mb-8 flex flex-col sm:flex-row items-center gap-y-4 sm:gap-y-0 sm:gap-x-4  ">
         <Link
-          scroll={false}
           href="https://support.anera.org/a/shapers-for-palestine"
           className="primBtn w-full  sm:w-fit "
         >
@@ -70,7 +69,6 @@ function HelpPage() {
         </Link>
 
         <Link
-          scroll={false}
           href="/resources"
           className="secBtn w-full  sm:w-fit "
         >
