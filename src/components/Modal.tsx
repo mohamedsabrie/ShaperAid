@@ -10,17 +10,17 @@ function Modal({ children }: { children: ReactNode }) {
   const { scope, animate } = useModal();
 
   return (
-    <div className=" sm:py-12 py-4 px-4 ">
-      <dialog 
+    <div className=" sm:py-12 py-4 px-4 overflow-auto ">
+      <dialog
         open
         ref={scope}
-        className="relative top-1/2   opacity-0 z-20  bg-[#1b1f22d9]  text-white outline-none max-w-[640px] pt-10 sm:pt-[72px] px-4 sm:px-10 pb-6 "
+        className="relative   opacity-0 z-20  bg-[#1b1f22d9]  text-white outline-none max-w-full sm:max-w-[640px]  pt-10 sm:pt-[72px] px-4 sm:px-10 pb-6 "
       >
         <XMarkIcon
-          onClick={async() => {
-            await animate(scope.current, { opacity: 0}, {duration: 1});
-            push("/")
-          } }
+          onClick={async () => {
+            await animate(scope.current, { opacity: 0 }, { duration: 1 });
+            push("/");
+          }}
           className="absolute top-3 right-3 text-white h-6 sm:h-10 m-2 cursor-pointer"
         />
         {children}
