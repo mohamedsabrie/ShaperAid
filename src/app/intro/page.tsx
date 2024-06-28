@@ -1,6 +1,6 @@
 import Modal from "@/components/Modal";
 import Image from "next/image";
-import introImage from "/public/intro.jpg";
+import introImage from "/public/intro.webp";
 import Link from "next/link";
 
 function IntroPage() {
@@ -8,7 +8,7 @@ function IntroPage() {
     <Modal>
       <h1 className="modal-title">Intro</h1>
       <div className="flex flex-col gap-y-8">
-        <Image src={introImage} alt="intro-image" />
+        <Image priority src={introImage} alt="intro-image" />
         <p className="desc">
           We find ourselves at a critical juncture in history, where our
           collective responsibility towards each other cannot be overlooked. In

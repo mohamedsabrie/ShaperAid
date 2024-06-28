@@ -18,7 +18,7 @@ function ContentWrapper({ children }: { children: ReactNode }) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="relative max-w-6xl mx-auto  z-10 text-white flex flex-col min-h-screen    items-center justify-evenly px-8 py-12 w-full h-full "
+        className="relative max-w-7xl mx-auto  z-10 text-white flex flex-col min-h-screen    items-center justify-evenly px-8 py-12 w-full h-full "
       >
         {children}
       </motion.div>

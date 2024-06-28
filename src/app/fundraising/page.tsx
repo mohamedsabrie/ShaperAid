@@ -1,14 +1,16 @@
 import Modal from "@/components/Modal";
 import Image from "next/image";
-import introImage from "/public/fundraising.jpg";
+import introImage from "/public/fundraising.webp";
 import Link from "next/link";
+import TableView from "@/components/TableView";
+import tableData from "./tableData.json";
 
 function FundraisingPage() {
   return (
     <Modal>
       <h1 className="modal-title">Fundraising</h1>
       <div className="flex flex-col gap-y-8">
-        <Image src={introImage} alt="intro-image" />
+        <Image priority src={introImage} alt="intro-image" />
       </div>
       <div className="mt-10 flex flex-col">
         <h3 className="section-title">HOW WILL YOUR FUNDS IMPACT LIVES?</h3>
@@ -16,6 +18,9 @@ function FundraisingPage() {
           Every contribution matters. If you’re able to provide more, here’s how
           you can provide relief:
         </p>
+      </div>
+      <div className="mt-8">
+        <TableView data={tableData} />
       </div>
       <div className="mt-10 flex flex-col">
         <h3 className="section-title">ARE THERE OTHER FUNDRAISING EFFORTS?</h3>
@@ -45,10 +50,7 @@ function FundraisingPage() {
           Donate
         </Link>
 
-        <Link
-          href="/resources"
-          className="secBtn w-full  sm:w-fit "
-        >
+        <Link href="/resources" className="secBtn w-full  sm:w-fit ">
           Resources
         </Link>
       </div>

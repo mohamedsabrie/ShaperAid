@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "row": ["🏥 $30: 16 blood bags.", "It can provide the Central Blood Bank Society in Gaza with 16 blood bags. Blood bags are a vital element in ensuring patient survival during a crisis."]
+  },
+  {
+    "id": "2",
+    "row": ["🧼 $80: hygiene kit to 2 displaced families.", "These kits include hand soap, shampoo, toilet paper, laundry detergent, toothpaste, and more"]
+  },
+  {
+    "id": "3",
+    "row": ["🥫 $100: food parcel for a family of 4 for 7-10 days.", "Feed one displaced family with a food parcel that will meet their nutritional needs for 7-10 days, include canned tuna, cheese, kidney beans, jam, za'atar, and more."]
+  },
+  {
+    "id": "4",
+    "row": ["👨‍👩‍👦‍👦 $200: food parcel for 2 families of 4 for 7-10 days.", "Feed two displaced family with a food parcel that will meet their nutritional needs for 7-10 days, include canned tuna, cheese, kidney beans, jam, za'atar, and more."]
+  }
+]

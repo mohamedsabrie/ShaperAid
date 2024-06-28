@@ -1,14 +1,14 @@
 import Modal from "@/components/Modal";
 import Image from "next/image";
 import Link from "next/link";
-import introImage from "/public/intro.jpg";
+import introImage from "/public/intro.webp";
 
 function HelpPage() {
   return (
     <Modal>
       <h1 className="modal-title">Help</h1>
       <div className="flex flex-col gap-y-8">
-        <Image src={introImage} alt="intro-image" />
+        <Image priority src={introImage} alt="intro-image" />
       </div>
       <div className="mt-10 flex flex-col">
         <h3 className="section-title">HOW CAN HUBS HELP?</h3>
