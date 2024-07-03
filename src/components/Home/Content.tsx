@@ -16,8 +16,8 @@ function Content() {
       className="overflow-hidden"
     >
       <div className=" py-8 sm:py-12 sm:px-8 flex flex-col gap-y-3 sm:gap-y-5 items-center justify-center text-center">
-        <h1 className="font-semibold text-2xl sm:text-4xl">IHSANAID</h1>
-        <p className="text-[11px] sm:text-[13px] font-light">
+        <h1 className="font-semibold text-2xl sm:text-4xl">SHAPERAID</h1>
+        <p className="text-[11px] sm:text-[13px] font-light tracking-[0.2em] ">
           A GLOBAL SHAPERS CROSS-HUB COLLABORATION, UNITING HEARTS AND RESOURCES
           TO RAISE FUNDS FOR CRUCIAL HUMANITARIAN AID IN PALESTINE.
         </p>

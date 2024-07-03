@@ -6,8 +6,8 @@ import HomeBackground from "@/components/Home/HomeBackground";
 const appFont = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IHSANAID",
-  description: "IHSANAID demo app",
+  title: "SHAPERAID",
+  description: "SHAPERAID app",
 };
 
 export default function RootLayout({

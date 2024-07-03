@@ -56,7 +56,7 @@ function IntroPage() {
         <Link  href="/help" className="primBtn w-full  sm:w-fit ">
           How can I help?
         </Link>
-        <Link  href="/help" className="secBtn w-full  sm:w-fit ">
+        <Link  href="/anira" className="secBtn w-full  sm:w-fit ">
           more about anira
         </Link>
       </div>

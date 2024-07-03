@@ -17,11 +17,21 @@
 }
 
 body {
- @apply bg-black relative min-h-screen;
+ @apply bg-black relative min-h-screen ;
+ 
 }
 
 
 @layer base {
+
+  ul li {
+    padding-left: 0.5em;
+  }
+
+  p, li {
+    @apply leading-7
+  }
+  
  
   dialog::backdrop{
     @apply bg-black bg-opacity-15

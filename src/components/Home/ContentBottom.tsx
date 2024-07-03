@@ -9,7 +9,7 @@ function ContentBottom() {
       <div className="flex flex-col sm:flex-row text-[11px] sm:text-[13px]">
         {links.map((link, idx, arr) => {
           return (
-            <Link  href={`/${link}`} key={link} className={`border  ${idx == arr.length - 1 ? "" : "sm:border-r-0"} text-center cursor-pointer  border-white px-5 py-2 hover:backdrop-brightness-[1.2] transition-all duration-200 `}>
+            <Link  href={`/${link}`} key={link} className={`border  ${idx == arr.length - 1 ? "" : "sm:border-r-0"} tracking-[0.2em] text-center cursor-pointer  border-white px-5 py-2 hover:backdrop-brightness-[1.2] transition-all duration-200 `}>
               {link.toUpperCase()}
             </Link>
           );
