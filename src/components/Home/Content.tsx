@@ -2,16 +2,23 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useAppContext } from "@/app/Providers";
 
 function Content() {
+  const { homeAnimate, setHomeAnimate } = useAppContext();
+  console.log(homeAnimate, "homeAnimate")
   return (
     <motion.div
+    
       transition={{
-        delay: 0.5,
+        delay:homeAnimate ?  0.5 : 0,
         ease: "easeInOut",
         duration: 1,
       }}
-      initial={{ height: 0 }}
+      onAnimationComplete={() => {
+        setHomeAnimate(false);
+      }}
+      initial={{ height: homeAnimate ? 0 : "auto" }}
       whileInView={{ height: "auto" }}
       className="overflow-hidden"
     >
