@@ -10,17 +10,11 @@ function ContactPage() {
         <p className="desc">
           If you would like to get in touch or collaborate, feel free to reach
           out to us via mail,{" "}
-          <Link
-            className="border-b border-dashed"
-            href="https://www.instagram.com/shaperaid/"
-          >
+          <Link className="link" href="https://www.instagram.com/shaperaid/">
             Instagram
           </Link>{" "}
           or your Hub Curator/
-          <Link
-            className="border-b border-dashed"
-            href="https://bit.ly/shaperaidcoordinators"
-          >
+          <Link className="link" href="https://bit.ly/shaperaidcoordinators">
             regional coordinator/Community Champion
           </Link>
         </p>

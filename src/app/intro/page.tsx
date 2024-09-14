@@ -30,7 +30,7 @@ function IntroPage() {
         <h3 className="section-title">MISSION:</h3>
         <p className="desc">
           To mobilize a global{" "}
-          <Link className="border-b border-dashed" href="/fundraising">
+          <Link className="link" href="/fundraising">
             fundraising
           </Link>{" "}
           effort for Anera to deliver direct relief for families in Gaza and to
@@ -53,10 +53,10 @@ function IntroPage() {
         </ul>
       </div>
       <div className="mt-10 mb-8 flex flex-col sm:flex-row items-center gap-y-4 sm:gap-y-0 sm:gap-x-4  ">
-        <Link  href="/help" className="primBtn w-full  sm:w-fit ">
+        <Link href="/help" className="primBtn w-full  sm:w-fit ">
           How can I help?
         </Link>
-        <Link  href="/anira" className="secBtn w-full  sm:w-fit ">
+        <Link href="/anira" className="secBtn w-full  sm:w-fit ">
           more about anira
         </Link>
       </div>
